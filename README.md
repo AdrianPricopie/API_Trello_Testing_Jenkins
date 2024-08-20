@@ -46,6 +46,15 @@ This project demonstrates how to test the Trello API using Postman and Newman, i
 3. **Set Environment in Postman**:
    - Import the collection and environment in Postman.
    - Replace the API key and token in the environment variables.
+  
+4. **Run the Collection in Newman**:
+   - Use the following command to run the collection in Newman:
+   
+     ```bash
+     newman run API_Trello.postman_collection.json -e Trello_env.postman_environment.json
+     ```
+
+
 
 ---
 
