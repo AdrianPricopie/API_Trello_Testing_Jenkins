@@ -45,16 +45,6 @@ This project demonstrates how to test the Trello API using Postman and Newman, i
    - Open [Managing Power-Ups](https://developer.atlassian.com/cloud/trello/guides/power-ups/managing-power-ups/) for instructions.
    - Follow the steps to generate an API key and token for use in Postman.
 
-3. **Set Environment in Postman**:
-   - Import the collection and environment in Postman.
-   - Replace the API key and token in the environment variables.
-  
-4. **Run the Collection in Newman**:
-   - Use the following command to run the collection in Newman:
-   
-     ```bash
-     newman run API_Trello.postman_collection.json -e Trello_env.postman_environment.json
-     ```
 
 
 
@@ -80,4 +70,14 @@ This project demonstrates how to test the Trello API using Postman and Newman, i
   ```bash
   npm install -g newman
 
+3. **Set Environment in Postman**:
+   - Import the collection and environment in Postman.
+   - Replace the API key and token in the environment variables.
+  
+4. **Run the Collection in Newman**:
+   - Use the following command to run the collection in Newman:
+   
+     ```bash
+     newman run API_Trello.postman_collection.json -e Trello_env.postman_environment.json
+     ```
 
