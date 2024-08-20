@@ -1,72 +1,72 @@
-# API_Trello_Testing_Jenkins
-
+# API Trello Testing with Jenkins
 
 ## Description
 
 This project demonstrates how to test the Trello API using Postman and Newman, integrated into a Jenkins pipeline. It uses a Postman collection to run automated API tests and generate test reports.
 
-Tools used: Postman, Newman,Newman-reporter,jenkins
+### Tools Used:
+- **Postman**: API testing tool.
+- **Newman**: Command-line collection runner for Postman.
+- **Jenkins**: Automation server for CI/CD.
+- **Newman-reporter**: Reporter for enhanced test result visualization.
 
-Link to collection : API Trello collection .
+### Types Available for Testing:
 
-Types available for testing
+#### HTTP Methods Supported by Trello API:
+- **GET**
+- **POST**
+- **PUT**
+- **DELETE**
 
-HTTP methods supported by this API are GET, POST, PUT, PATCH, and DELETE. In this section, you can explore and perform tests on various types of operations supported by the Trello API. Some examples for this project includes:
+### Example Operations:
 
-Create Requests:
+#### Create Requests:
+- **Actions**: Create a new board, list, card, checklist, or organization.
 
-Actions: Create a new board, list, card, checklist, or organization.
-Read (GET) Requests:
+#### Read (GET) Requests:
+- **Actions**: Retrieve information about boards, lists, cards, checklists, and organizations.
 
-Actions: Retrieve information about boards, lists, cards, checklists, and organizations.
-Update (PUT/PATCH) Requests:
+#### Update (PUT/PATCH) Requests:
+- **Actions**: Modify existing boards, lists, cards, checklists, or organizations.
 
-Actions: Modify existing boards, lists, cards, checklists, or organizations.
-Delete Requests:
+#### Delete Requests:
+- **Actions**: Remove boards, cards, checklists, or organizations.
 
-Actions: Remove boards, cards, checklists, or organizations.
+---
 
+### How the Trello API Token is Created:
 
+1. **Create a Trello account**:  
+   [Sign up here](https://developer.atlassian.com/cloud/trello/)
+   
+2. **Generate API key and token**:  
+   - Open [Managing Power-Ups](https://developer.atlassian.com/cloud/trello/guides/power-ups/managing-power-ups/) for instructions.
+   - Follow the steps to generate an API key and token for use in Postman.
 
+3. **Set Environment in Postman**:
+   - Import the collection and environment in Postman.
+   - Replace the API key and token in the environment variables.
 
+---
 
+## Setup Instructions
 
+### 1. Install Postman:
+- Ensure that [Postman](https://www.postman.com/) is installed and running.
 
+### 2. Create a Postman Account:
+- Sign up for a Postman account if you don’t have one already.
 
+### 3. Install Jenkins:
+- Download and install [Jenkins](https://www.jenkins.io/).
 
-How the token was created for API trello and postman:
+### 4. Configure Node.js in Jenkins:
+- Go to "Manage Jenkins" -> "Global Tool Configuration" and add Node.js as a tool.
 
-[create a account 
-https://developer.atlassian.com/cloud/trello/ open this link
-click Managing Power-Ups
-](https://developer.atlassian.com/cloud/trello/guides/power-ups/managing-power-ups/) instruction for genereate apy key and token
+### 5. Install Newman:
+- Install Newman globally using npm:
+  
+  ```bash
+  npm install -g newman
 
-link to enviroment
-
-import collection and enviroment in the postman
-
-You need to change key and token in the environment
-
-
-
-
-
-## Setup
-
-1.Install postman
--make sure [postman](https://www.postman.com/) is istalled and running
-
-2.Create an postman account
-
-1. **Install Jenkins**:
-   - Make sure [Jenkins](https://www.jenkins.io/) is installed and running.
-
-2. **Configure Node.js**:
-   - Add Node.js as a tool in Jenkins. You can do this from "Manage Jenkins" -> "Global Tool Configuration".
-
-3. **Install Newman**:
-   - Install Newman globally using npm:
-     ```bash
-     npm install -g newman
-     ```
 
