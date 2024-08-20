@@ -4,6 +4,8 @@
 
 This project demonstrates how to test the Trello API using Postman and Newman, integrated into a Jenkins pipeline. It uses a Postman collection to run automated API tests and generate test reports.
 
+[documentation](https://developer.atlassian.com/cloud/trello/rest/api-group-actions/#api-group-actions)
+
 ### Tools Used:
 - **Postman**: API testing tool.
 - **Newman**: Command-line collection runner for Postman.
