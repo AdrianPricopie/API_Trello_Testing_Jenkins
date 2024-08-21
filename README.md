@@ -83,7 +83,7 @@ The file `API_Trello.postman_collection.json` is a Postman collection designed t
 
 ---
 
-## Setup Instructions
+## Setup Instructions for newman run
 
 ### 1. Install Postman
 - Download and install [Postman](https://www.postman.com/).
@@ -91,14 +91,16 @@ The file `API_Trello.postman_collection.json` is a Postman collection designed t
 ### 2. Create a Postman Account
 - Sign up for a Postman account if you don’t have one already.
 
-### 3. Install Jenkins
-- Download and install [Jenkins](https://www.jenkins.io/).
-
-### 4. Configure Node.js in Jenkins
-- In Jenkins, go to **Manage Jenkins** -> **Global Tool Configuration** and add Node.js as a tool.
+### 3. Install Node.js
+- Download and install [Node.js](https://nodejs.org/).
 
 ### 5. Install Newman
 - Install Newman globally using npm:
   ```bash
   npm install -g newman
+  
+### 4. Run collection with newman
+- Open your terminal, navigate to the directory, and run the following command:
+    ```bash
+  newman run API_Trello.postman_collection.json -e Trello_env.postman_environment.json
 
