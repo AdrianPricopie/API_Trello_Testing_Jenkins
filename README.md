@@ -102,5 +102,19 @@ The file `API_Trello.postman_collection.json` is a Postman collection designed t
 ### 4. Run collection with newman
 - Open your terminal, navigate to the directory, and run the following command:
     ```bash
-  newman run API_Trello.postman_collection.json -e Trello_env.postman_environment.json
+    newman run API_Trello.postman_collection.json -e Trello_env.postman_environment.json
+
+### 5. Install [newman-reporter-htmlextra](https://www.npmjs.com/package/newman-reporter-htmlextra)
+ - The reporter works as a plugin with Newman so ensure that you have already installed that package globally, using npm install -g newman
+      ```bash
+   npm install -g newman-reporter-htmlextra
+
+
+### 6. Run collection with newman html report extra
+ - To generate an HTML report using the htmlextra reporter, run this command:
+    ```bash
+    newman run API_Trello.postman_collection.json -e Trello_env.postman_environment.json --reporters cli,htmlextra --reporter-htmlextra-export newman/reportTest.html
+   ```
+
+
 
