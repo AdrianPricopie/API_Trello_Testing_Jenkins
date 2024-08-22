@@ -174,9 +174,13 @@ pipeline {
   }
 }
 ```
-jenkins pipeline succesfully
+jenkins pipeline succesfully:
+
 ![jenkins](https://github.com/AdrianPricopie/API_Trello_Testing_Jenkins/blob/main/jenkins.png)
 
+Postman CL:
+
+![postman CL](https://github.com/AdrianPricopie/API_Trello_Testing_Jenkins/blob/main/postman%20collection%20run%20with%20jenkins.png)
 
 [Video Instructions](https://www.youtube.com/watch?v=Z8mDjwoZh38&t=703s)
 
