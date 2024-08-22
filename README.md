@@ -1,4 +1,4 @@
-# API Trello Testing with postman and jenkins 
+# API Trello Testing with postman/newman/jenkins
 
 ## Description
 
