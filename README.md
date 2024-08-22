@@ -84,6 +84,8 @@ The file `API_Trello.postman_collection.json` is a Postman collection designed t
 
 ![Execution report](https://github.com/AdrianPricopie/API_Trello_Testing_Jenkins/blob/main/execution%20report.png)
 
+All the tests are passed.
+
 
 
 ## Setup Instructions for newman run
