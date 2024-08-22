@@ -82,6 +82,11 @@ The file `API_Trello.postman_collection.json` is a Postman collection designed t
    - Follow the instructions [here](https://developer.atlassian.com/cloud/trello/guides/power-ups/managing-power-ups/) to generate an API key and token for Postman.
 
 ---
+## Execution report 
+
+![Execution report](https://github.com/AdrianPricopie/API_Trello_Testing_Jenkins/blob/main/execution%20report.png)
+
+
 
 ## Setup Instructions for newman run
 
