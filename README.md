@@ -69,8 +69,6 @@ The file `API_Trello.postman_collection.json` is a Postman collection designed t
 ### Delete Requests:
 - **Actions**: Remove boards, cards, checklists, or organizations.
 
-[API Documentation](https://developer.atlassian.com/cloud/trello/rest/api-group-actions/#api-group-actions)
-
 ---
 
 ## How to Generate the Trello API Token
