@@ -174,6 +174,10 @@ pipeline {
   }
 }
 ```
+jenkins pipeline succesfully
+![jenkins](https://github.com/AdrianPricopie/API_Trello_Testing_Jenkins/blob/main/jenkins.png)
+
+
 [Video Instructions](https://www.youtube.com/watch?v=Z8mDjwoZh38&t=703s)
 
 
