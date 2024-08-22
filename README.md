@@ -145,7 +145,7 @@ To integrate Postman CLI with Jenkins, you need to configure Jenkins to run the 
 
 Once Jenkins is set up, add the following script to your Jenkins pipeline file to run automated tests using Postman CLI.
 
-### Jenkins Pipeline Script for macbook
+### Jenkins Pipeline Script
 
 ```groovy
 pipeline {
