@@ -120,6 +120,56 @@ The file `API_Trello.postman_collection.json` is a Postman collection designed t
     ```bash
     newman run API_Trello.postman_collection.json -e Trello_env.postman_environment.json --reporters cli,htmlextra --reporter-htmlextra-export newman/reportTest.html
    ```
+    
+## Integrate with Jenkins
 
+### Prerequisites
 
+1. **Download and Install Postman CLI**  
+   Follow the installation guide for Postman CLI based on your system:  
+   [Postman CLI Installation](https://learning.postman.com/docs/postman-cli/postman-cli-installation/#mac-apple-chip-installation)
 
+2. **Generate API Key in Postman**  
+   To generate the API key:
+   - Open Postman and click on your profile icon in the top right corner.
+   - Navigate to **Settings**.
+   - Go to the **API Keys** section and click **Generate API Key**.
+   - Name the API key, generate it, and save it securely.
+
+### Jenkins Pipeline Integration
+
+To integrate Postman CLI with Jenkins, you need to configure Jenkins to run the pipeline on your local system or a Jenkins server.
+
+- If you're running Jenkins on a **macOS machine**, follow this guide for setup:  
+  [Jenkins macOS installation guide](https://www.jenkins.io/doc/book/installing/macos/)
+
+Once Jenkins is set up, add the following script to your Jenkins pipeline file to run automated tests using Postman CLI.
+
+### Jenkins Pipeline Script for macbook
+
+```groovy
+pipeline {
+  agent any
+
+  tools { nodejs "{your_nodejs_configured_tool_name}" }
+
+  stages {
+    stage('Install Postman CLI') {
+      steps {
+        sh 'curl -o- "https://dl-cli.pstmn.io/install/osx_64.sh" | sh'
+      }
+    }
+
+    stage('Postman CLI Login') {
+      steps {
+        sh 'postman login --with-api-key $POSTMAN_API_KEY'
+      }
+    }
+
+    stage('Running collection') {
+      steps {
+        sh 'postman collection run "$YOUR_COLLECTION_ID" -e "$YOUR_ENVIRONMENT_ID"'
+      }
+    }
+  }
+}
